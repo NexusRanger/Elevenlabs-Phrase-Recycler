@@ -19,21 +19,14 @@ You can adjust the speed of the saved mp3 - speed variable in say_or_fetch.py (s
 You can optionally set the voice when calling say_or_fetch.py, and a default voice is also set as a variable eg..
 #
 
-Creation Script for say_or_fetch function
-
-Enter a phrase here to create the mp3
-
-or paste these lines into any other python script to have it say a phrase
+Usage Example - paste these two lines into any other python script to have it say a phrase:
 
 from say_or_fetch import say_or_fetch
 
-voice = "Bella" 
+say_or_fetch("Hello, hope you're having a good day", "Bella")
+#
 
-text  = "Hello, hope you're having a good day" 
-
-say_or_fetch(text, voice)
-
-You can leave out the 'voice' argument and it will use default voice set in say_or_fetch.py
+You can optionally leave out the 'voice' argument and it will use default voice set in say_or_fetch.py
 
 e.g.  say_or_fetch("Have a nice day")
 
